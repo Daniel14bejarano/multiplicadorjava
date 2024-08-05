@@ -4,6 +4,8 @@
 
 package com.mycompany.multiplicarnumeros;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Usuario
@@ -11,6 +13,16 @@ package com.mycompany.multiplicarnumeros;
 public class MultiplicarNumeros {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner sc= new Scanner(System.in);
+        int a,b;
+        System.out.println("Ingrese el primer numero");
+        a= sc.nextInt();
+        
+        System.out.println("Ingrese el segundo numero");
+        b= sc.nextInt();
+        
+        int c= a*b;
+        System.out.println("= " + c);
+        
     }
 }
